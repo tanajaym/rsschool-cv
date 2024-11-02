@@ -30,7 +30,7 @@ In my spare time I'm into going to gym, crocheing and taking part in hackathon f
 
 ```js
 function multiply(a, b){
- return( a * b);
+ return(a * b);
 }
 ```
 
