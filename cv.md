@@ -1,6 +1,6 @@
 # Soboleva Eva, Frontend developer
 
-<img src="src/IMG_2452.JPG" alt="Alt text" width="300" height="300">
+<img src="src/IMG_2452.JPG" alt="Alt text" width="200" height="200">
 
 ## Contact Information
 |         |           | 
