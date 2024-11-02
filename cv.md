@@ -9,6 +9,7 @@
 |**Email:**| evsay2002@gmail.com|
 |**Tg:**| @polporsi|
 |**GitHub:**| https://github.com/tanajaym|
+|**Discord:**| eviesssss(@tanajaym)|
 
 ## About Me: 
 Hi! 👋 \
