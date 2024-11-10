@@ -1,4 +1,9 @@
 
+*{
+  overflow-wrap: break-word;
+}
+
+
 body{
   background-color: rgba(3, 3, 27, 0.93);
   color: rgb(238, 226, 206);
@@ -13,7 +18,6 @@ body{
     flex-direction: column;
     width: 100%;
     justify-content: center;
-    
   }
   
   header{
@@ -34,20 +38,19 @@ body{
   }
   
   .head-myInfo{
-    background-color: rgb(252, 177, 177);
+    /* background-color: rgb(252, 177, 177); */
     margin-left: 1rem;
     width: 60rem;
+    overflow-wrap: break-word; 
   }
   
-  .myImage, .head-myInfo {
-    /* margin: 0 10px;  */
-  }
   
   
   main{
-    background-color: rgba(245, 149, 149, 0.5);
-    margin-left: 1rem;
+    /* background-color: rgba(245, 149, 149, 0.5); */
+    margin-left: 3rem;
     width: 60rem;
+    overflow-wrap: break-word;
   }
   
   .main-section{
@@ -55,10 +58,11 @@ body{
     justify-content: center;
     height: 100vh;
     margin-top: 1rem;
+    overflow-wrap: break-word;
   }
   
   aside{
-    background-color: rgba(99, 245, 253, 0.5);
+    /* background-color: rgba(99, 245, 253, 0.5); */
     width: 20rem;
     margin-left: 1rem;
     box-sizing: border-box;
@@ -72,13 +76,10 @@ body{
     top: 0;
     right: 0;
     height: 50rem; /* Высота границы равна высоте aside */
-    width: 5px; /* Длина границы */
+    width: 5px; 
     background-color: white; /* Цвет границы */
   }
   
-  /* aside::after{
-    
-  } */
   
   footer{
     background-color: rgba(78, 95, 96, 0.5);
@@ -90,13 +91,27 @@ body{
   }
   
 @media (max-width: 800px) {
-  .main-section{
-    display:block;
-  }    
+
+  body{
+    min-width: 800px;
+    width: 100%;
+  }
+
+  .myImage{
+    display: flex;;
+  }
+
+  .container{
+    justify-content: center;
+  }
 
   .header{
-    display: block;
+    width: 100%;
   }
+
+  .main-section{
+    display:block;
+  }  
   
   aside{
     width: 100%;
@@ -105,6 +120,17 @@ body{
   aside::after{
     display:none;
   }
+  aside::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Ширина границы равна ширине aside */
+    height: 5px; /* Толщина границы */
+    background-color: white; /* Цвет границы */
+  }
+
+
 }
   
   
