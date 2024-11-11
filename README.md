@@ -1,3 +1,4 @@
-# rsschool-cv
 
-[CV#1. Markdown & Git](https://github.com/tanajaym/rsschool-cv/blob/main/cv.md)
+
+[CV#1. Markdown & Git](https://tanajaym.github.io/rsschool-cv/cv)
+
