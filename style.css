@@ -1,27 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
 
 *{
-  overflow-wrap: break-word;
+  box-sizing: border-box;
 }
 
 
 body{
-  background-color: rgba(3, 3, 27, 0.93);
-  color: rgb(238, 226, 206);
-    display: flex;
-    justify-content: center;
-    min-width: 800px;
+  font-family: "Marcellus", serif;
+  background-color: rgba(235, 208, 224, 0.93);
+  color: rgb(21, 13, 1);
+  display: flex;
+  justify-content: center;
+  min-width: 800px;
+  background-image: linear-gradient(rgb(193, 224, 249), rgb(245, 244, 193));
+  /* background-image: linear-gradient(to top, rgba(147, 147, 147, 0.239), rgb(255, 165, 243)); */
+}
     /* width: 100%; */
-  }
-  .container{
-    display:flex;
-    /* flex-flow: column wrap; */
+  
+
+.container{
+    display: flex;
     flex-direction: column;
     width: 100%;
     justify-content: center;
-  }
+    position: relative;
+    min-height: 100vh;
+    height: auto;
+}
   
-  header{
-    background-color: rgba(253, 225, 99, 0.5);
+  
+header{
+    /* background-color: rgba(254, 254, 254, 0.551); */
     display:flex;
   }
   
@@ -31,20 +40,18 @@ body{
     width: 100%; 
   }
   
-  .myImage{
+.myImage{
     display: flex;
-    margin: 0 10px;
+    /* margin: 0 10px; */
     align-items: center;
   }
   
-  .head-myInfo{
+.head-myInfo{
     /* background-color: rgb(252, 177, 177); */
     margin-left: 1rem;
     width: 60rem;
     overflow-wrap: break-word; 
   }
-  
-  
   
   main{
     /* background-color: rgba(245, 149, 149, 0.5); */
@@ -59,6 +66,8 @@ body{
     height: 100vh;
     margin-top: 1rem;
     overflow-wrap: break-word;
+    margin-bottom: 1rem; /* Добавляем отступ снизу */
+    /* background-color: red; */
   }
   
   aside{
@@ -75,22 +84,39 @@ body{
     position: absolute;
     top: 0;
     right: 0;
-    height: 50rem; /* Высота границы равна высоте aside */
+    height: 40rem;
     width: 5px; 
-    background-color: white; /* Цвет границы */
+    background-color: white; 
   }
   
   
   footer{
     background-color: rgba(78, 95, 96, 0.5);
+    margin-top: auto;
   }
   
+  h1{
+    font-size: 4rem;
+  }
+
   h2{
     font-weight: bold;
     font-size: 3rem;
   }
+
+  li{
+    font-size: 1.5rem;
+  }
+
+pre{
+  background-color: red;
+  display:inline-block;
+  justify-content: center;
+  border-radius: 0.3rem;
+  font-size: 1.5rem;
+}
   
-@media (max-width: 800px) {
+@media (width < 800px) {
 
   body{
     min-width: 800px;
@@ -103,34 +129,41 @@ body{
 
   .container{
     justify-content: center;
+    display:block;
   }
 
   .header{
     width: 100%;
+    height: auto;
   }
 
   .main-section{
     display:block;
+    height: auto;
   }  
   
   aside{
     width: 100%;
+    margin-top: 1rem;
   }
 
   aside::after{
     display:none;
   }
-  aside::before {
+
+  h2{
+    font-weight: 5rem;
+  }
+
+  /* aside::before {
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%; /* Ширина границы равна ширине aside */
-    height: 5px; /* Толщина границы */
-    background-color: white; /* Цвет границы */
-  }
-
-
+    width: 100%; 
+    height: 5px; 
+    background-color: white;
+  } */
 }
   
   

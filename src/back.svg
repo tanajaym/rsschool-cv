@@ -1,12 +1,12 @@
 
-<svg viewBox='0 0 219 219' xmlns='http://www.w3.org/2000/svg'>
+<svg viewBox='0 0 254 254' xmlns='http://www.w3.org/2000/svg'>
   <filter id='noiseFilter'>
     <feTurbulence 
       type='fractalNoise' 
-      baseFrequency='6.01' 
-      numOctaves='6' 
+      baseFrequency='5.51' 
+      numOctaves='4' 
       stitchTiles='stitch'/>
   </filter>
+  
   <rect width='100%' height='100%' filter='url(#noiseFilter)'/>
 </svg>
-  
