@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 body{
   font-family: "Marcellus", serif;
   background-color: rgba(235, 208, 224, 0.93);
@@ -21,8 +20,6 @@ body{
   --background-color: rgba(78, 95, 96, 0.219);
 }
 
-/* layouts */
-
 .container{
   display: flex;
   flex-direction: column;
@@ -36,14 +33,14 @@ body{
 }
   
 header{
-  display:flex;
+  display: flex;
   margin: 0 auto;
 }
   
 .header{
-    display:flex;
-    justify-content: center;
-    width: 100%; 
+  display: flex;
+  justify-content: center;
+  width: 100%; 
 }
   
 .header p{
@@ -87,12 +84,11 @@ main{
   transition: 1ms;
 }
 
-
 aside{
   width: 20rem;
   margin-left: 1rem;
   box-sizing: border-box;
-  position:relative;
+  position: relative;
 }
   
 aside::after {
@@ -103,14 +99,14 @@ aside::after {
   height: 100%;
   width: 5px; 
   background-color: transparent;
-  border-style:solid;
+  border-style: solid;
   border-color: var(--border-color); 
   border-width: 2.5px;
   border-radius: 5px;
 }
   
 footer{
-  background-color:var(--background-color);
+  background-color: var(--background-color);
   color: var(--main-text-color);
   margin-top: auto;
   width: 100%;
@@ -119,7 +115,6 @@ footer{
 .footer{
   width: 100%;
   text-align: center;
-
 }
   
 h1{
@@ -137,20 +132,20 @@ h2{
   font-size: 1.8rem;
 }
 
-  li{
-    font-size: 1.3rem;
-  }
+li{
+  font-size: 1.3rem;
+}
 
 pre{
   background-color: var(--background-color);
-  display:inline-block;
+  display: inline-block;
   justify-content: center;
   border-radius: 0.3rem;
   font-size: 1.3rem;
   border: none;
   border-style: none;
   padding: 30px;
-  border-style:dashed;
+  border-style: dashed;
   border-radius: 6px;
   border-color: var(--border-color);
   border-width: 2.5px;
@@ -166,9 +161,8 @@ pre{
 
   .container{
     justify-content: center;
-    display:block;
+    display: block;
     margin: 0 auto;
-
   }
   
   .header{
@@ -190,13 +184,12 @@ pre{
   }
 
   .main-section{
-    display:block;
+    display: block;
     height: auto;
-    justify-content:flex-start;
+    justify-content: flex-start;
     margin: 0 auto;
   }  
 
-  
   aside{
     width: 100%;
     margin-top: 1rem;
@@ -204,12 +197,12 @@ pre{
   }
 
   aside::after{
-    display:none;
+    display: none;
   }
   
   aside::before {
     content: '';
-    position:absolute;
+    position: absolute;
     bottom: -20px;
     left: -20px;
     width: 100%; 
@@ -220,21 +213,4 @@ pre{
   h1{
     font-size: 3rem;
   }
-  
-  /* header::after{
-    content: '';
-    position: absolute;
-    bottom: 0px;
-    top: 39rem;
-    left: 0px;
-    width: 50%; 
-    height: 5px; 
-    background-color: rgba(255, 255, 255, 0.712);
-  } */
-  }
-
-  
-  
-  
-  
-  
+}
