@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+
+body{
+  font-family: "Marcellus", serif;
+  background-color: rgba(235, 208, 224, 0.93);
+  color: var(--main-text-color);
+  display: flex;
+  justify-content: space-between; 
+  min-width: 800px;
+  background-image: linear-gradient(rgb(193, 224, 249), rgb(245, 244, 193));
+}
+
+:root{
+  --main-text-color: rgba(43, 41, 40, 0.853);
+  --border-color: rgba(255, 255, 255, 0.722);
+}
+
+/* layouts */
+
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  height: auto;
+  margin: 0 auto;
+  background-color: rgba(245, 245, 245, 0.489);
+}
+  
+header{
+  display:flex;
+  margin: 0 auto;
+}
+  
+.header{
+    display:flex;
+    justify-content: center;
+    width: 100%; 
+}
+  
+.header p{
+  font-size: 1.5rem;
+}
+
+.myImage{
+  display: flex;
+  margin-right: 5rem;
+  align-items: center;
+    /* justify-content: center; */
+}
+
+.head-myInfo{
+  margin-left: 1rem;
+  width: auto;
+  overflow-wrap: break-word; 
+}
+  
+main{
+  margin-left: 3rem;
+  width: auto;
+  overflow-wrap: break-word;
+}
+  
+.main-section{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  overflow-wrap: break-word;
+  margin-bottom: 1rem;
+}
+
+.project-list a{
+  text-decoration: none;
+  color: var(--main-text-color);
+  cursor: pointer;
+}
+
+.project-list a:hover{
+  color: rgb(128, 152, 165);
+  transition: 1ms;
+}
+
+
+aside{
+  width: 20rem;
+  margin-left: 1rem;
+  box-sizing: border-box;
+  position:relative;
+}
+  
+aside::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 5px; 
+  background-color: transparent;
+  border-style:solid;
+  border-color: var(--border-color); 
+  border-width: 2.5px;
+  border-radius: 5px;
+}
+  
+footer{
+  background-color: rgba(78, 95, 96, 0.5);
+  margin-top: auto;
+}
+  
+h1{
+  font-size: 3.5rem;
+  color: rgba(10, 4, 23, 0.893);
+}
+
+.header-h1{
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+h2{
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+  li{
+    font-size: 1.3rem;
+  }
+
+pre{
+  background-color: rgba(138, 138, 131, 0.172);
+  display:inline-block;
+  justify-content: center;
+  border-radius: 0.3rem;
+  font-size: 1.3rem;
+  border: none;
+  border-style: none;
+  padding: 30px;
+  border-style:dashed;
+  border-radius: 6px;
+  border-color: var(--border-color);
+  border-width: 2.5px;
+}
+  
+@media (width < 50rem) {
+
+  body{
+    min-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .container{
+    justify-content: center;
+    display:block;
+    margin: 0 auto;
+
+  }
+  
+  .header{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .myImage{
+    display: flex;
+    text-align: center;
+  }
+
+  .head-myInfo{
+    overflow-wrap: break-word;
+    width: 100%;
+  }
+
+  .main-section{
+    display:block;
+    height: auto;
+    justify-content:flex-start;
+    margin: 0 auto;
+  }  
+
+  
+  aside{
+    width: 100%;
+    margin-top: 1rem;
+    margin: 0 auto;
+  }
+
+  aside::after{
+    display:none;
+  }
+  
+  aside::before {
+    content: '';
+    position:absolute;
+    bottom: -20px;
+    left: -20px;
+    width: 100%; 
+    height: 5px; 
+    background-color: rgba(255, 255, 255, 0.712);
+  }
+  
+  span{
+    
+  }
+  
+  h1{
+    font-size: 3rem;
+  }
+  
+  /* header::after{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    top: 39rem;
+    left: 0px;
+    width: 50%; 
+    height: 5px; 
+    background-color: rgba(255, 255, 255, 0.712);
+  } */
+  }
+
+  
+  
+  
+  
+  
